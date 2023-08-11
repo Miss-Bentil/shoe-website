@@ -1,0 +1,140 @@
+@media (max-width: 767px) {
+  .home_search {
+    /* width: 100% !important; */
+    width: 180px;
+  }
+  .carousel {
+    display: none;
+  }
+}
+
+.home_search {
+  border-radius: 20px;
+}
+
+
+.search_box {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding-left: 15px;
+  &:hover .narrowInput {
+    visibility: visible;
+    width: 150px; 
+    
+  }
+}
+
+.search_box > input {
+  flex: 1;
+  border: none !important;
+  outline: none !important;
+  padding-left: 10px;
+}
+
+.fixed-search {
+  position: sticky;
+  top: 15px;
+  /* right: 0; */
+  /* width: 80%; */
+  z-index: 100;
+}
+
+.home_search {
+  /* width: 20px; */
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.first_image {
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.img_container {
+  height: 9rem;
+}
+
+.caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 3px 5px;
+  font-size: 14px;
+}
+
+.overflow-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.zoomed {
+  transform: scale(1.2);
+}
+
+.category-bar {
+  height: 2px;
+  background-color: #000; 
+  margin-top: 5px; 
+}
+
+.carousel-height {
+  height: 700px;
+  width: 100%;
+}
+
+.right-style {
+  right: auto;
+}
+
+.narrowInput  {
+  visibility: hidden;
+  width: 0;
+   transition-property: visibility, width;
+  transition-duration: 0.2s;
+
+}
+
+.selected .deets {
+  display: block;
+  /* Additional styling for the "deets" section when it's selected */
+}
+
+/* Hide the "deets" section when the screen size is small */
+@media (max-width: 768px) {
+  .deets {
+    display: none;
+  }
+
+  
+  .rotate-icon {
+    /* Add CSS to rotate the plus icon when the section is selected */
+  }
+}
+
+@media (min-width:768px) {
+  .plus{
+    display: none;
+  }
+}
